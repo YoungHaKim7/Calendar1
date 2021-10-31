@@ -87,4 +87,24 @@ html {
   margin: 0.3rem;
   width: calc(40.2rem / 7);
   height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 00.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today) {
+  background-color: #262626;
+  border: 00.2rem solid #777;
+  cursor: pointer;
+}
+
+.pre-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.today {
+  background-color: #167e56;
 }
